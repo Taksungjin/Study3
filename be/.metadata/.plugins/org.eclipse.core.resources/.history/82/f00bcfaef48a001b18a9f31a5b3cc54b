@@ -1,0 +1,19 @@
+package com.example.demo.sec.controller;
+
+import java.util.HashMap;
+import java.util.Map;
+
+@RestController
+@RequestMapping("/auth")
+@CrossOrigin(origins="*")
+public class AuthController {
+	@GetMapping("/insertMany")
+	public Map<String, Object> insertMany() {
+		System.out.println(" insertMany µé¾î¿È");
+		Map<String, Object> map = new HashMap<>();
+		map.put("data","SUCCESS");
+		return map;
+		
+	}
+
+}

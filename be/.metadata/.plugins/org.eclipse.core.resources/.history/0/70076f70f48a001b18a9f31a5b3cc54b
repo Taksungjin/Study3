@@ -1,0 +1,13 @@
+package com.example.demo.cmm.controller;
+
+@RestController
+public class HomeController {
+	@GetMapping("/")
+	public String home() {
+		System.out.println("=========================");
+		System.out.println("====== Home Started =====");
+		System.out.println("=========================");
+		return "<h1>Hello World !!</h1>";
+	}
+
+}
